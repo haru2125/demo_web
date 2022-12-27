@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuphie</title>
+    <link rel="icon" href="./src/img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="yuphie__navbar" id="navbar">
+        <div class="yuphie__navbar_main">
+            <a href="#introduction" class="item">Introduction</a>
+            <a href="#about" class="item">About me</a>
+            <a href="#projects" class="item">Projects</a>
+            <a href="#socials" class="item">Socials</a>
+
+            <button class="sidebar_toggle" id="sidebar_toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+
+    <div class="yuphie__introduction scroll_animation" id="introduction">
+        <div class="yuphie__introduction_content">
+            <div class="yuphie__avatar" style="--source:url('../img/yuphie.jpg');"></div>
+
+            <h1 class="yuphie__title">DOAN BAO</h1>
+            <p class="yuphie__description">Just a normal developer.</p>
+
+            <a href="#about" class="yuphie__explore"><i class="fas fa-arrow-right"></i> About me</a>
+        </div>
+    </div>
+
+    <div class="yuphie__wrap" id="about">
+        <div class="yuphie__about scroll_animation" id="about_inner">
+            <div class="yuphie__half_image scroll_animation" style="--source:url('../img/intro_bg.png');" id="about_inner_1"></div>
+    
+            <div class="yuphie__contents scroll_animation" id="about_inner_2">
+                <h1>ABOUT ME</h1>
+
+                <p>My name is Bao. I'm from Vietnam.<br />I'm currently a student. Nevermind, i'm so young.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="yuphie__wrap">
+        <div class="yuphie__skills scroll_animation" id="skills">
+            <h1>SKILLS</h1>
+
+            <div class="yuphie__skills_cards scroll_animation">
+                <div class="yuphie__skills_card scroll_animation">
+                    <img src="./src/img/html5_logo.png">
+                    <h1>HTML</h1>
+                </div>
+
+                <div class="yuphie__skills_card scroll_animation">
+                    <img src="./src/img/css_logo.png">
+                    <h1>CSS</h1>
+                </div>
+            </div>
+
+            <div class="yuphie__skills_cards scroll_animation">
+                <div class="yuphie__skills_card scroll_animation">
+                    <img src="./src/img/js_logo.png">
+                    <h1>JavaScript</h1>
+                </div>
+
+                <div class="yuphie__skills_card scroll_animation">
+                    <img src="./src/img/ts_logo.svg">
+                    <h1>TypeScript</h1>
+                </div>
+    
+                <div class="yuphie__skills_card scroll_animation">
+                    <img src="./src/img/php_logo.png">
+                    <h1>PHP</h1>
+                </div>
+            </div>
+
+            <div class="yuphie__skills_cards scroll_animation">
+                <div class="yuphie__skills_card scroll_animation">
+                    <img src="./src/img/react_logo.png">
+                    <h1>React</h1>
+                </div>
+
+                <div class="yuphie__skills_card scroll_animation">
+                    <img src="./src/img/jquery_logo.png">
+                    <h1>jQuery</h1>
+                </div>
+    
+                <div class="yuphie__skills_card scroll_animation">
+                    <img src="./src/img/bs_logo.png">
+                    <h1>Bootstrap</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="yuphie__wrap" id="projects">
+        <div class="yuphie__projects scroll_animation" id="projects_inner">
+            <h1>PROJECTS</h1>
+
+            <div class="yuphie__project_cards">
+                <div class="yuphie__project_card scroll_animation">
+                    <img src="./src/img/projects/yuphie.png" class="yuphie__project_img">
+
+                    <h3>Information v1</h3>
+
+                    <div class="yuphie__project_badges">
+                        <p class="yuphie__project_badge">HTML</p>
+                        <p class="yuphie__project_badge">CSS</p>
+                        <p class="yuphie__project_badge">JS</p>
+                    </div>
+                </div>
+
+                <div class="yuphie__project_card scroll_animation">
+                    <img src="./src/img/projects/bocchi_store.png" class="yuphie__project_img">
+
+                    <h3>Bocchi Store</h3>
+
+                    <div class="yuphie__project_badges">
+                        <p class="yuphie__project_badge">HTML</p>
+                        <p class="yuphie__project_badge">CSS</p>
+                        <p class="yuphie__project_badge">JS (React)</p>
+                    </div>
+                </div>
+
+                <div class="yuphie__project_card scroll_animation">
+                    <img src="./src/img/projects/music_player.png" class="yuphie__project_img">
+
+                    <h3>Music Player</h3>
+
+                    <div class="yuphie__project_badges">
+                        <p class="yuphie__project_badge">HTML</p>
+                        <p class="yuphie__project_badge">CSS</p>
+                        <p class="yuphie__project_badge">JS</p>
+                    </div>
+                </div>
+
+                <div class="yuphie__project_card scroll_animation">
+                    <img src="./src/img/projects/create.png" class="yuphie__project_img">
+
+                    <h3>Create Payment Page</h3>
+
+                    <div class="yuphie__project_badges">
+                        <p class="yuphie__project_badge">HTML</p>
+                        <p class="yuphie__project_badge">CSS</p>
+                        <p class="yuphie__project_badge">JS (jQuery)</p>
+                        <p class="yuphie__project_badge">PHP</p>
+                        <p class="yuphie__project_badge">MySQL</p>
+                    </div>
+                </div>
+
+                <div class="yuphie__project_card scroll_animation">
+                    <img src="./src/img/projects/websocket_livechat.png" class="yuphie__project_img">
+
+                    <h3>WebSocket Chat Box</h3>
+
+                    <div class="yuphie__project_badges">
+                        <p class="yuphie__project_badge">HTML</p>
+                        <p class="yuphie__project_badge">CSS</p>
+                        <p class="yuphie__project_badge">JS (jQuery)</p>
+                        <p class="yuphie__project_badge">PHP</p>
+                        <p class="yuphie__project_badge">MySQL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="yuphie__wrap" id="socials">
+        <div class="yuphie__socials scroll_animation">
+            <h1>SOCIALS</h1>
+
+            <div class="yuphie__socials_links">
+                <a href="https://www.facebook.com/yuphiedev/" target="_blank" class="yuphie__socials_link"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/@yuphiedev" target="_blank" class="yuphie__socials_link"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/yuphiedev" target="_blank" class="yuphie__socials_link"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="yuphie__footer">
+        <p>Design by Yuphie.</p>
+    </div>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>

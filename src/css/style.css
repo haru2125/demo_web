@@ -1,0 +1,485 @@
+/*
+    by @yuphiedev
+    don't copy pls :<
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.yuphie__navbar {
+    z-index: 3;
+    top: 0;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    transition: background-color .2s;
+}
+
+.yuphie__navbar .yuphie__navbar_main {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 38px 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+}
+
+.yuphie__navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.yuphie__navbar .yuphie__navbar_main .item {
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: opacity .2s;
+}
+
+.yuphie__navbar .yuphie__navbar_main .item:hover {
+    opacity: 1;
+}
+
+.yuphie__navbar .yuphie__navbar_main .sidebar_toggle {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    margin-left:  auto;
+    font-size: 25px;
+}
+
+.yuphie__wrap {
+    padding: 24px;
+}
+
+.yuphie__introduction {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/intro.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: opacity .3s;
+}
+
+.yuphie__introduction.scroll_animation {
+    opacity: 0;
+}
+
+.yuphie__introduction.scroll_animation.active {
+    opacity: 1;
+}
+
+.yuphie__introduction .yuphie__introduction_content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.yuphie__introduction .yuphie__introduction_content .yuphie__avatar {
+    width: 250px;
+    height: 250px;
+    background-image: var(--source);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.yuphie__introduction .yuphie__introduction_content .yuphie__title {
+    margin-top: 20px;
+    font-size: 45px;
+}
+
+.yuphie__introduction .yuphie__introduction_content .yuphie__description {
+    margin-top: 20px;
+}
+
+.yuphie__introduction .yuphie__introduction_content .yuphie__explore {
+    margin-top: 45px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #111111;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.65rem 0.85rem;
+    border-radius: 4px;
+    transition: background-color .2s;
+}
+
+.yuphie__introduction .yuphie__introduction_content .yuphie__explore:hover {
+    background-color: #0a0a0a;
+}
+
+.yuphie__introduction .yuphie__introduction_content .yuphie__explore i {
+    margin-right: 8px;
+}
+
+.yuphie__about {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    /* background-color: #111111; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: opacity .2s;
+}
+
+.yuphie__about.scroll_animation {
+    opacity: 0;
+}
+
+.yuphie__about.scroll_animation.active {
+    opacity: 1;
+}
+
+.yuphie__about .yuphie__half_image {
+    position: relative;
+    width: 40%;
+    height: 400px;
+    background-image: var(--source);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    margin-right: auto;
+    transition: opacity .4s, left .4s;
+}
+
+.yuphie__about .yuphie__half_image.scroll_animation {
+    opacity: 0;
+    left: -50px;
+}
+
+.yuphie__about .yuphie__half_image.scroll_animation.active {
+    opacity: 1;
+    left: 0;
+}
+
+.yuphie__about .yuphie__contents {
+    position: relative;
+    width: 60%;
+    padding: 16px 26px;
+    text-align: center;
+    margin-left: auto;
+    transition: opacity .4s;
+}
+
+.yuphie__about .yuphie__contents.scroll_animation {
+    opacity: 0;
+}
+
+.yuphie__about .yuphie__contents.scroll_animation.active {
+    opacity: 1;
+    right: 0;
+}
+
+.yuphie__about h1 {
+    font-size: 35px;
+}
+
+.yuphie__about p {
+    line-height: 35px;
+    margin-top: 20px;
+}
+
+.yuphie__skills {
+    margin-top: 250px;
+    margin-bottom: 100px;
+    transition: opacity .3s;
+}
+
+.yuphie__skills.scroll_animation {
+    opacity: 0;
+}
+
+.yuphie__skills.scroll_animation.active {
+    opacity: 1;
+}
+
+.yuphie__skills h1 {
+    text-align: center;
+}
+
+.yuphie__skills .yuphie__skills_cards {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: opacity .3s;
+}
+
+.yuphie__skills .yuphie__skills_cards.scroll_animation {
+    opacity: 0;
+}
+
+.yuphie__skills .yuphie__skills_cards.scroll_animation.active {
+    opacity: 1;
+}
+
+.yuphie__skills .yuphie__skills_cards .yuphie__skills_card {
+    position: relative;
+    cursor: pointer;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    margin-left: 25px;
+    margin-right: 25px;
+    transition: opacity .3s, left .4s, right .4s, transform .2s;
+}
+
+.yuphie__skills .yuphie__skills_cards .yuphie__skills_card.scroll_animation {
+    opacity: 0;
+}
+
+.yuphie__skills .yuphie__skills_cards .yuphie__skills_card.scroll_animation:first-child {
+    left: -50px;
+    opacity: 0;
+}
+
+.yuphie__skills .yuphie__skills_cards .yuphie__skills_card.scroll_animation:last-child {
+    right: -50px;
+    opacity: 0;
+}
+
+.yuphie__skills .yuphie__skills_cards .yuphie__skills_card.scroll_animation.active {
+    opacity: 1;
+}
+
+.yuphie__skills .yuphie__skills_cards .yuphie__skills_card.scroll_animation:first-child.active {
+    left: 0;
+    opacity: 1;
+}
+
+.yuphie__skills .yuphie__skills_cards .yuphie__skills_card.scroll_animation:last-child.active {
+    right: 0;
+    opacity: 1;
+}
+
+.yuphie__skills .yuphie__skills_cards .yuphie__skills_card img {
+    width: 60px;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.yuphie__skills .yuphie__skills_cards .yuphie__skills_card h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.yuphie__skills .yuphie__skills_cards .yuphie__skills_card:hover {
+    transform: scale(1.05)!important;
+    opacity: 0.8!important;
+}
+
+.yuphie__projects {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    transition: opacity .3s;
+}
+
+.yuphie__projects.scroll_animation {
+    opacity: 0;
+}
+
+.yuphie__projects.scroll_animation.active {
+    opacity: 1;
+}
+
+.yuphie__projects h1 {
+    text-align: center;
+}
+
+.yuphie__projects .yuphie__project_cards {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.yuphie__projects .yuphie__project_cards .yuphie__project_card {
+    position: relative;
+    margin-top: 55px;
+    width: 400px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+    transition: top .3s, opacity .3s;
+}
+
+.yuphie__projects .yuphie__project_cards .yuphie__project_card.scroll_animation {
+    top: 20px;
+    opacity: 0;
+}
+
+.yuphie__projects .yuphie__project_cards .yuphie__project_card.scroll_animation.active {
+    top: 0;
+    opacity: 1;
+}
+
+.yuphie__projects .yuphie__project_cards .yuphie__project_card:hover {
+    opacity: 0.8!important;
+}
+
+.yuphie__projects .yuphie__project_cards .yuphie__project_card .yuphie__project_img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* .yuphie__projects .yuphie__project_cards .yuphie__project_card h2 {
+    font-size: 23px;
+    margin-top: 10px;
+    text-align: center;
+} */
+
+.yuphie__projects .yuphie__project_cards .yuphie__project_card h3 {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.yuphie__projects .yuphie__project_cards .yuphie__project_card .yuphie__project_badges {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.yuphie__projects .yuphie__project_cards .yuphie__project_card .yuphie__project_badges .yuphie__project_badge {
+    background-color: #2b2b2b;
+    padding: 6px 8px;
+    border-radius: 3px;
+    margin: 0 5px;
+    font-size: 13px;
+    transition: background-color .3s;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* .yuphie__projects .yuphie__project_cards .yuphie__project_card:hover .yuphie__project_badges .yuphie__project_badge {
+    background-color: #111111;
+} */
+
+.yuphie__socials {
+    position: relative;
+    margin-top: 300px;
+    margin-bottom: 250px;
+    transition: opacity .3s;
+}
+
+.yuphie__socials.scroll_animation {
+    opacity: 0;
+}
+
+.yuphie__socials.scroll_animation.active {
+    opacity: 1;
+}
+
+.yuphie__socials h1 {
+    text-align: center;
+}
+
+.yuphie__socials .yuphie__socials_links {
+    margin-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.yuphie__socials .yuphie__socials_links .yuphie__socials_link {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-size: 19px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #2b2b2b;
+    padding: 0.85rem 1rem;
+    border-radius: 4px;
+    transition: background-color .25s;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.yuphie__socials .yuphie__socials_links .yuphie__socials_link:hover {
+    background-color: #151515;
+}
+
+.yuphie__footer {
+    background-color: #111111;
+    padding: 16px;
+    text-align: center;
+}
+
+@media (max-width:900px) {
+    .yuphie__about {
+        flex-direction: column;
+    }
+
+    .yuphie__about .yuphie__contents {
+        margin-left: 0;
+    }
+
+    .yuphie__about .yuphie__half_image, .yuphie__about .yuphie__contents {
+        width: 100%;
+    }
+
+    .yuphie__about .yuphie__contents {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width:600px) {
+    .yuphie__navbar .yuphie__navbar_main {
+        padding: 30px 26px;
+    }
+
+    .yuphie__navbar .yuphie__navbar_main .item {
+        display: none;
+    }
+}
+
+@media (min-width:600px) {
+    .yuphie__navbar .yuphie__navbar_main .sidebar_toggle {
+        display: none;
+    }
+}
